@@ -1,0 +1,45 @@
+public class inheritance {
+    public static void main(String[] args) {
+//        Fish h=new Fish();
+//        h.eat();
+//        h.swim();
+//        h.breathe();
+        Dog d=new Dog();
+        d.eat();
+        d.breathe();
+        d.run();
+    }
+}
+class Animals{
+    String color;
+    void eat(){
+        System.out.println("eating");
+    }
+    void breathe(){
+        System.out.println("breathing");
+    }
+}
+// Single inheritance
+//class Fish extends Animals{
+//    void swim(){
+//        System.out.println("swim");
+//    }
+//}
+// multi level inheritance
+//class Dog extends Fish{
+//    void run(){
+//        System.out.println("run");
+//    }
+//}
+
+//hierarchical inheritance
+class Fish extends Animals {
+    void swim() {
+        System.out.println("swim");
+    }
+}
+class Dog extends Animal {
+    void run() {
+        System.out.println("run");
+    }
+}
