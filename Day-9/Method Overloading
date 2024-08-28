@@ -1,0 +1,33 @@
+public class methodoverloading {
+    public static void main(String[] args) {
+//        Calculator c=new Calculator();
+//        System.out.println(c.sum(2,4));
+//        System.out.println(c.sum(2,4,7));
+//        System.out.println(c.sum(2.5,4.5));
+        Deer d=new Deer();
+        d.eat();
+    }
+}
+//class Calculator{
+//    int sum(int a,int b){
+//        return a+b;
+//    }
+//    double sum(double a,double b){
+//        return a+b;
+//    }
+//    int sum(int a,int b,int c){
+//        return a+b+c;
+//    }
+//}
+////method overriding
+
+class Animalss{
+    void eat(){
+        System.out.println("eating anything");
+    }
+}
+class Deer extends Animalss{
+    void eat(){
+        System.out.println("eating grass");
+    }
+}
