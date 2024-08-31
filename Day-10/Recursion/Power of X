@@ -1,0 +1,14 @@
+public class power {
+    public static int powers(int x,int n){
+        if(n==0){
+            return 1;
+        }
+        int p1=powers(x,n-1);
+        return x*p1;
+    }
+    public static void main(String[] args) {
+        int x=2;
+        int n=10;
+        System.out.println(powers(x,n));
+    }
+}
